@@ -2,84 +2,84 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 .container {
-  background-color: #f0f0f0;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 .top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-input,
-select {
-  background-color: #f0f0f0;
-  margin-top: 2rem;
-  padding: 1rem;
-
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
+  gap: 2rem;
 }
 h2 {
-  color: #e83820;
-  font-size: 4rem;
-  padding: 1rem;
-  box-shadow: 10px 10px 9px -8px #e83820;
-  margin-bottom: 4rem;
+  width: 80%;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 2px 2px 4px rebeccapurple;
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  color: rebeccapurple;
 }
-input {
-  width: 40vw;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
-}
-select {
-  border-radius: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color: #e83820;
-  font-weight: bold;
-}
-.dvd {
-  width: 2rem;
-  height: 2rem;
-  padding: 1rem;
-  border-radius: 50%;
-  background-color: #e83820;
-  color: #fff;
-}
-.result {
-  width: 60vw;
-  height: 30vh;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
+.inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
+  margin: auto;
+  gap: 2rem;
 }
-p {
-  font-size: 1.5rem;
-  color: #e83820;
+input,
+select {
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
-span {
-  font-size: 1.5rem;
+input,
+select,
+.result {
+  width: 70%;
+  padding: 1rem;
 }
 button {
-  width: 40vw;
-  background-color: #e83820;
+  width: 40%;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background-color: rebeccapurple;
   color: #fff;
-  padding: 1rem;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
-  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.result {
+  margin-top: 2rem;
+  height: 20vh;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    width: 60%;
+    padding: 2rem;
+    box-shadow: 2px 2px 4px;
+  }
+  input,
+  select,
+  .result {
+    width: 40%;
+    padding: 2rem;
+  }
+  button {
+    width: 20%;
+    padding: 1.5rem;
+  }
 }

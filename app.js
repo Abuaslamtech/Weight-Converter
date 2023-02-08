@@ -5,6 +5,9 @@ const initialValue = document.getElementById("initialValue");
 const finalValue = document.getElementById("finalValue");
 const btn = document.getElementById("btn");
 const rp = document.getElementById("rp");
+const result = document.getElementById("result");
+
+result.style.display = "none";
 
 function convert() {
   let fromUnit = from.value.toLowerCase();
@@ -41,6 +44,7 @@ function convert() {
     let msg = "please select the unit for conversion";
     rp.innerHTML = msg;
   }
+  result.style.display = "flex";
 }
 //event listeners
 btn.addEventListener("click", convert);

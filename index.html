@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
-    <title>Weight Converter</title>
-  </head>
-  <body>
-    <main class="container">
-      <section id="top" class="top">
-        <h2>Weight Converter</h2>
-        <input type="number" id="input" />
-        <div class="inputs">
-          <select name="from" id="from">
-            <option value="default">Convert from</option>
-            <option value="KG">KG</option>
-            <option value="Gram">Gram</option>
-            <option value="Tonne">Tonne</option>
-          </select>
-          <span class="dvd"><=></span>
-          <select name="to" id="to">
-            <option value="default">Convert to</option>
-            <option value="KG">KG</option>
-            <option value="Gram">Gram</option>
-            <option value="Tonne">Tonne</option>
-          </select>
-        </div>
-      </section>
-      <section id="result" class="result">
-        <p id="rp">
-          <span id="initialValue">0.00</span> is equivalent to
-          <span id="finalValue">0.00</span>
-        </p>
-      </section>
-      <section id="footer" class="footer">
-        <button id="btn">convert</button>
-      </section>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./app.js" defer></script>
+  <title>Weight Converter</title>
+</head>
+
+<body>
+  <main class="container">
+    <section id="top" class="top">
+      <h2>Weight Converter</h2>
+      <input type="number" id="input" />
+      <div class="inputs">
+        <select name="from" id="from">
+          <option value="default">Convert from</option>
+          <option value="KG">KG</option>
+          <option value="Gram">Gram</option>
+          <option value="Tonne">Tonne</option>
+        </select>
+        <select name="to" id="to">
+          <option value="default">Convert to</option>
+          <option value="KG">KG</option>
+          <option value="Gram">Gram</option>
+          <option value="Tonne">Tonne</option>
+        </select>
+      </div>
+    </section>
+    <section id="result" class="result">
+      <p id="rp">
+        <span id="initialValue">0.00</span> is equivalent to
+        <span id="finalValue">0.00</span>
+      </p>
+    </section>
+    <section id="footer" class="footer">
+      <button id="btn">convert</button>
+    </section>
+  </main>
+</body>
+
 </html>
